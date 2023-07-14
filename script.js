@@ -55,3 +55,6 @@ const ourTeam = [
 ];
 
 console.log(ourTeam)
+
+let teamContainer = document.getElementById("team-container");
+let cardTeam = "";
