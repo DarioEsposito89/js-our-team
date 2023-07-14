@@ -53,3 +53,5 @@ const ourTeam = [
 
     },
 ];
+
+console.log(ourTeam)
