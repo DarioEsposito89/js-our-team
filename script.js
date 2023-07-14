@@ -18,38 +18,38 @@
 
 const ourTeam = [
     {
-        Name: "Wayne Barnett",
+        completeName: "Wayne Barnett",
         role: "Founder & CEO",
-        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        fotoProfile: "img/wayne-barnett-founder-ceo.jpg",
     },
     {
-        Name: "Angela Caroll",
+        completeName: "Angela Caroll",
         role: "Chief Editor",
-        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        fotoProfile: "img/angela-caroll-chief-editor.jpg",
         
     },
     {
-        Name: "Walter Gordon",
+        completeName: "Walter Gordon",
         role: "Office Manager",
-        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        fotoProfile: "img/walter-gordon-office-manager.jpg",
 
     },
     {
-        Name: "Angela Lopez",
+        completeName: "Angela Lopez",
         role: "Social Media Manager",
-        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        fotoProfile: "img/angela-lopez-social-media-manager.jpg",
 
     },
     {
-        Name: "Scott Estrada",
+        completeName: "Scott Estrada",
         role: "Developer",
-        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        fotoProfile: "img/scott-estrada-developer.jpg",
 
     },
     {
-        Name: "Barbara Ramos",
+        completeName: "Barbara Ramos",
         role: "Graphic Designer",
-        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        fotoProfile: "img/barbara-ramos-graphic-designer.jpg",
 
     },
 ];
@@ -58,3 +58,19 @@ console.log(ourTeam)
 
 let teamContainer = document.getElementById("team-container");
 let cardTeam = "";
+
+for (i = 0; i < ourTeam.length; i++) {
+    let cardTeam = document.createElement("div");
+    teamContainer.append(cardTeam);
+    cardTeam.innerHTML = `
+        <div class="col py-4">
+            <div class="card" style="width: 20em;">
+                <img src="${ourTeam[i].fotoProfile}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">${ourTeam[i].completeName}</h5>
+                    <p class="card-text text-center">${ourTeam[i].role}</p>
+                </div>
+            </div>
+        </div>
+        `;
+    }
