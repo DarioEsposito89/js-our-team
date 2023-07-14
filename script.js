@@ -15,7 +15,7 @@
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
 
-
+// ARRAY DI OGGETTI CON I MEMBRI DEL TEAM
 const ourTeam = [
     {
         completeName: "Wayne Barnett",
@@ -59,9 +59,12 @@ console.log(ourTeam)
 let teamContainer = document.getElementById("team-container");
 let cardTeam = "";
 
+// CICLO CHE CREA LE CARD CON GLI OBJECTS DELL'ARRAY E LE STAMPA IN HTML
 for (i = 0; i < ourTeam.length; i++) {
+    // CREO UN ELEMENTO DIV 
     let cardTeam = document.createElement("div");
     teamContainer.append(cardTeam);
+    // SOVRASCRIVO E ASSEGNO LE CLASSI AL DIV, INSERENDO GLI OBJECTS
     cardTeam.innerHTML = `
         <div class="col py-4">
             <div class="card" style="width: 20em;">
@@ -74,3 +77,9 @@ for (i = 0; i < ourTeam.length; i++) {
         </div>
         `;
     }
+
+    let newMember = {
+        image: "",
+        name: "",
+        role: "",
+    };
