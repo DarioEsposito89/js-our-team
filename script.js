@@ -14,3 +14,42 @@
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
+
+
+const ourTeam = [
+    {
+        Name: "Wayne Barnett",
+        role: "Founder & CEO",
+        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+    },
+    {
+        Name: "Angela Caroll",
+        role: "Chief Editor",
+        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+        
+    },
+    {
+        Name: "Walter Gordon",
+        role: "Office Manager",
+        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+
+    },
+    {
+        Name: "Angela Lopez",
+        role: "Social Media Manager",
+        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+
+    },
+    {
+        Name: "Scott Estrada",
+        role: "Developer",
+        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+
+    },
+    {
+        Name: "Barbara Ramos",
+        role: "Graphic Designer",
+        fotoProfile: "wayne-barnett-founder-ceo.jpg",
+
+    },
+];
