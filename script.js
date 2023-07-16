@@ -83,3 +83,25 @@ for (i = 0; i < ourTeam.length; i++) {
         name: "",
         role: "",
     };
+
+    let addCards = document.getElementById("addMemberBtn");
+
+    // FUNZIONE CHE GENERA LA CARD DI UN NUOVO MEMBRO DEL TEAM AL CLICK DEL BOTTONE
+    addCards.addEventListener("click", function () {
+    newMember.image = "https://xsgames.co/randomusers/avatar.php?g=male";
+    newMember.name = document.getElementById("name").value;
+    newMember.role = document.getElementById("role").value;
+    newCardTeam = document.createElement("div");
+    teamContainer.append(newCardTeam);
+    newCardTeam.innerHTML = `
+    <div class="col py-4">
+            <div class="card" style="width: 20em;">
+                <img src="${newMember.image}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">${newMember.name}</h5>
+                    <p class="card-text text-center">${newMember.role}</p>
+                </div>
+            </div>
+        </div>
+    `;
+});
