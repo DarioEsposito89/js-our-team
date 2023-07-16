@@ -105,3 +105,9 @@ for (i = 0; i < ourTeam.length; i++) {
         </div>
     `;
 });
+
+let reset = document.getElementById("reset");
+reset.addEventListener("click", function () {
+    document.getElementById("name").value = "";
+    document.getElementById("role").value = "";
+})
