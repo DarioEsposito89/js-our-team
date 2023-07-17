@@ -106,8 +106,9 @@ for (i = 0; i < ourTeam.length; i++) {
     `;
 });
 
-let reset = document.getElementById("reset");
-reset.addEventListener("click", function () {
+// BOTTONE CHE RESETTA I CAMPI INPUT
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", function () {
     document.getElementById("name").value = "";
     document.getElementById("role").value = "";
 })
